@@ -36,7 +36,8 @@ PRODUCT_VENDOR_PROPERTIES += \
     vendor.audio.offload.pstimeout.secs=3
 
 PRODUCT_VENDOR_OVERRIDES += \
-    debug.sf.auto_latch_unsignaled=false
+    debug.sf.auto_latch_unsignaled=false \
+    debug.sf.latch_unsignaled=false
 
 PRODUCT_ODM_PROPERTIES += \
     persist.vendor.audio.fluence.voicerec=true \
