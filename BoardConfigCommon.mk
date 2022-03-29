@@ -92,6 +92,7 @@ BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 BOARD_RAMDISK_USE_LZ4 := true
 KERNEL_DEFCONFIG := vendor/sm8150-perf_defconfig
 KERNEL_FULL_LLVM := true
+ADDITIONAL_KERNEL_DEFCONFIG := vendor/debugfs.config
 
 # Lineage Health
 TARGET_HEALTH_CHARGING_CONTROL_CHARGING_PATH := /sys/class/power_supply/battery/op_disable_charge
