@@ -138,7 +138,8 @@ PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.color.matrix=2 \
     vendor.display.disable_mask_layer_hint=1 \
     debug.sf.disable_client_composition_cache=1 \
-    ro.surface_flinger.enable_frame_rate_override=false
+    ro.surface_flinger.enable_frame_rate_override=false \
+    debug.sf.predict_hwc_composition_strategy=0
 
 # Display Mode
 PRODUCT_PACKAGES += \
