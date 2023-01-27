@@ -35,6 +35,9 @@ PRODUCT_VENDOR_PROPERTIES += \
     vendor.audio.noisy.broadcast.delay=600 \
     vendor.audio.offload.pstimeout.secs=3
 
+PRODUCT_VENDOR_OVERRIDES += \
+    debug.sf.auto_latch_unsignaled=false
+
 PRODUCT_ODM_PROPERTIES += \
     persist.vendor.audio.fluence.voicerec=true \
     persist.vendor.audio.hac.enable=false \
