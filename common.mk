@@ -140,7 +140,8 @@ PRODUCT_VENDOR_PROPERTIES += \
     debug.sf.disable_client_composition_cache=1 \
     ro.surface_flinger.enable_frame_rate_override=false \
     debug.sf.predict_hwc_composition_strategy=0 \
-    debug.sf.enable_gl_backpressure=false
+    debug.sf.enable_gl_backpressure=false \
+    debug.sf.enable_transaction_tracing=false
 
 # Display Mode
 PRODUCT_PACKAGES += \
