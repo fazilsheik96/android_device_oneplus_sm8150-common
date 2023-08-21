@@ -110,6 +110,10 @@ PRODUCT_COPY_FILES += \
 # Display
 TARGET_USE_AIDL_QTI_MEMTRACK := true
 
+# Dolby Manager
+PRODUCT_PACKAGES += \
+    DolbyManager
+
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.set_idle_timer_ms=2500 \
     ro.surface_flinger.set_touch_timer_ms=2500 \
