@@ -70,6 +70,9 @@ function blob_fixup() {
             vendor/lib64/libgf_ud_hal.so)
             [ "$2" = "" ] && return 0
             sed -i "s|vendor.boot.verifiedbootstate|vendor.boot.fingerprintbstate|g" "${2}"
+	        ;;
+            odm/lib/libdlbdsservice_v3_6.so | odm/lib/libstagefright_soft_ddpdec.so | odm/lib/libstagefrightdolby.so | odm/lib64/libdlbdsservice_v3_6.so)
+            "${PATCHELF}" --replace-needed "libstagefright_foundation.so" "libstagefright_foundation-v33.so" "${2}"
             ;;
             vendor/lib64/mediadrm/libwvdrmengine.so|vendor/lib64/libwvhidl.so)
             [ "$2" = "" ] && return 0
