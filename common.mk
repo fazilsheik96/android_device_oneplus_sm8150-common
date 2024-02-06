@@ -139,7 +139,8 @@ PRODUCT_VENDOR_PROPERTIES += \
     vendor.display.disable_mask_layer_hint=1 \
     debug.sf.disable_client_composition_cache=1 \
     ro.surface_flinger.enable_frame_rate_override=false \
-    debug.sf.predict_hwc_composition_strategy=0
+    debug.sf.predict_hwc_composition_strategy=0 \
+    debug.sf.enable_gl_backpressure=false
 
 # Display Mode
 PRODUCT_PACKAGES += \
