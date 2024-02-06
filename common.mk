@@ -150,7 +150,8 @@ PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.color.matrix=2 \
     vendor.display.disable_mask_layer_hint=1 \
     vendor.display.qdcm.disable_factory_mode=1 \
-    vendor.display.qdcm.mode_combine=1
+    vendor.display.qdcm.mode_combine=1 \
+    debug.sf.enable_gl_backpressure=false
 
 # HWUI
 PRODUCT_VENDOR_PROPERTIES += \
