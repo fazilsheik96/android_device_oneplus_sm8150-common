@@ -266,7 +266,8 @@ PRODUCT_PACKAGES += \
     AOSPAOnePlusSM8150SystemUI \
     OnePlusSM8150Frameworks \
     OnePlusSM8150Settings \
-    OnePlusSM8150SystemUI
+    OnePlusSM8150SystemUI \
+    OnePlusFrameworksOverlay
 
 # Platform
 TARGET_BOARD_PLATFORM := msmnile
@@ -312,11 +313,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
     persist.vendor.naruto.light.support=true \
     persist.vendor.sensors.enable.mag_filter=true
-
-# Soong namespaces
-PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH) \
-    device/oneplus/common
 
 # Storage
 PRODUCT_VENDOR_PROPERTIES += \
