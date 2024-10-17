@@ -98,7 +98,7 @@
     <hal format="hidl" optional="true">
         <name>android.hardware.health</name>
         <transport>hwbinder</transport>
-        <version>2.1</version>
+        <version>3.0</version>
         <interface>
             <name>IHealth</name>
             <instance>default</instance>
