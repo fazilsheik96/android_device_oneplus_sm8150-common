@@ -6,6 +6,7 @@ service vendor.fps_hal /vendor/bin/hw/android.hardware.biometrics.fingerprint@2.
     user system
     group system input uhid
     priority -20
+    task_profiles ProcessCapacityMax MaxPerformance
 
 on boot
     chown system system /sys/class/drm/card0-DSI-1/auth_status
